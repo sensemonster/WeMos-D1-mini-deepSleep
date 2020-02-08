@@ -31,9 +31,9 @@ void setup() {
   
   WiFi.config(ip, gateway, subnet);
   WiFi.begin(ssid, password); // Connect to the network
-  WiFi.softAPdisconnect (true); // switch of AP mode
+  WiFi.softAPdisconnect (true); // switch off AP mode
   
-  Serial.print("Connecting to mellifera...");
+  Serial.print("Connecting to WiFi...");
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
